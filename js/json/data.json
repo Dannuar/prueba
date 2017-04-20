@@ -1,0 +1,22 @@
+{
+  "personas": [
+
+    {
+      "nombre": "Daniel",
+      "paterno": "Nuñez",
+      "ciudad": "Queretaro",
+      "País": "México"
+    }
+   
+  ],
+
+  "carros":[
+  	{
+  		"marca": "Chevrolet",
+  		"modelo": "Sonic",
+  		"tiempo": 2014,
+  		"color": "negro"
+  	}]
+
+
+}

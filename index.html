@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html ng-app="gpiApp">
+<head>
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+	<title>Registros de Vehiculos</title>
+
+	<!--Incluir la libreria de bootstrap-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<!--Incluir la libreria de angularJS-->
+	<script src="js/lib/angular.min.js" type="text/javascript"></script>
+
+	<script src="js/app.js" type="text/javascript"></script>
+</head>
+<body>
+
+	<div class="container" ng-controller="ctrlApp">
+		<h1>Registro de Propietarios y Automóviles</h1>
+		<hr>
+		<div class="row">
+
+			<!--Imagen de la persona
+			<div class="col-sm-3">
+				<section class="panel">
+					<div class="panel-body" align="center">
+						<img ng-src="{{ persona.imagen }}" class="img-circle" alt="" width="100px" height="100px">
+					</div>
+				</section>
+			</div>
+			<!--Contendra la info de la persona-->
+			<div class="col-sm-3">
+				<section class="panel">
+					<div class="panel-body">
+						<h4>Datos personales</h4> 
+						<hr>
+						<strong>Nombre:<br> </strong>{{ persona.nombre}}
+						<br>
+						<strong>Apellido Paterno:<br> </strong>{{ persona.paterno}}
+						<br>
+						<strong>Apellido Materno:<br> </strong>{{ persona.materno}}
+						<br>
+						<strong>Fecha de nacimiento:<br> </strong>{{ persona.fecha}}
+						<br>			
+					</div>
+				</section>
+			</div>
+			<!--Contendra la tabla del registro de autos-->
+			<div class="col-sm-9">
+				<section class="panel">
+					<div class="panel-body">
+						<h4>Carros registrados</h4>
+						<hr>
+						<table class="table table-striped">
+							<tr>
+								<th>Marca</th>
+								<th>Modelo</th>
+								<th>Año</th>
+								<th>Color</th>
+							</tr>
+							<tr ng-repeat="car in carro">
+								<td>{{ car.marca}}</td>
+								<td>{{ car.modelo}}</td>
+								<td>{{ car.tiempo}}</td>
+								<td>{{ car.color}}</td>
+							</tr>	
+						</table>
+					</div>
+				</section>
+			</div>
+			<!--Pestaña 1: Agregar personas-->
+			<div class="col-md-4">
+				<section class="panel">
+					<div class="panel-body">
+						<button class="btn btn-info btn-xs btn-block">Agregar Persona</button>
+					</div>
+				</section>
+			</div>
+			<!--Pestaña 2:-->
+			<div class="col-md-4">
+				<section class="panel">
+					<div class="panel-body">
+						<button class="btn btn-info btn-xs btn-block">Segunda Pestaña</button>
+					</div>
+				</section>
+			</div>
+			<!--Pestaña 3:-->
+			<div class="col-md-4">
+				<section class="panel">
+					<div class="panel-body">
+						<button class="btn btn-info btn-xs btn-block">Tercera Pestaña</button>
+					</div>
+				</section>
+			</div>
+
+		</div>
+
+</body>
+</html>
